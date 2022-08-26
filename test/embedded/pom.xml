@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.camunda</groupId>
+    <artifactId>spring-zeebe-root</artifactId>
+    <version>8.0.8-SNAPSHOT</version>
+    <relativePath>../../</relativePath>
+  </parent>
+
+  <groupId>io.camunda</groupId>
+  <artifactId>spring-zeebe-test</artifactId>
+  <name>test/spring-zeebe-test</name>
+
+  <properties>
+    <version.java>17</version.java>
+    <java.version>${version.java}</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.camunda</groupId>
+      <artifactId>spring-zeebe-test-common</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.camunda</groupId>
+      <artifactId>zeebe-process-test-extension</artifactId>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+
+</project>
